@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kevin Durant </title>
+	
+	<style>
+	    * {
+	        margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+	    }
+	    body {
+	        background-color: black;
+	    }
+	    a {
+	        cursor: default;
+	        text-decoration: none;
+	        font-size: 20px;
+	        font-weight: 700;
+	        color: #fff;
+	        letter-spacing: 3px;
+		
+	    }
+	    li {
+			color: #000;
+	        list-style: none;
+	        cursor: default;
+	    }
+	    .container {
+	        position: absolute;
+	        top: 5%;
+	        left:50%;
+	        transform: translate(-50%, -50%);
+	        box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+	        font-size: 0;
+	    }
+	    .container .nav {
+	        display: inline-block;
+	        position: relative;
+	        width: 150px;
+	        height: 50px;
+	        background-color:;
+	        text-align: center;
+	        line-height: 50px;
+	    }
+	    .container .nav:hover {
+	        background-color: #3e3e3e;
+	    }
+	    .container .nav ul {
+	        display: none;
+	        position: absolute;
+	        top: 50px;
+	        width: 100%;
+	        box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+	        background-color: #fff;
+	        text-align: center;
+	    }
+	    .container .nav ul li a {
+	        display: block;
+	        color: #505050;
+	    }
+	    .container .nav ul li a:hover {
+	        background-color: #e1e1e1;
+	    }
+		.qw{
+			margin-top: 200px;
+	        width: 300px;
+			padding-left:200px;
+			height: 700px;
+			text-align: center;
+		}
+		
+	</style>
+	
+	
+	
+	</head>
+	<body>
+	<ul class="container">
+			<li class="nav">
+				<a href="http://127.0.0.1:8848/NationalBasketballAssociation/html.html">首页</a>
+			</li>
+			<li class="nav">
+				<a href="#">球星目录</a>
+				<ul>
+					<li><a herf="#">Jordan</a></li>
+					<li><a herf="#">Irving</a></li>
+					<li><a herf="#">Durant</a></li>
+					<li><a herf="#">Curry</a></li>
+					<li><a herf="#">James</a></li>
+				</ul>
+			</li>
+			<li class="nav">
+				<a href="#">比赛日程</a>      
+			</li>
+			<li class="nav">
+				<a href="#">了解更多球星</a>
+			</li>
+		</ul>
+	</div>
+	<div class="qw" style="color: white; width: 800px; height: 900px;">	
+	 <p style="width: auto; position: center">Kevin Durant 全名凯文·韦恩·杜兰特（Kevin Wayne Durant），1988年9月29日出生于美国华盛顿哥伦比亚特区，美国职业篮球运动员，司职前锋，效力于NBA菲尼克斯太阳队。 
+	 2007年NBA选秀，凯文·杜兰特在首轮第二顺位被西雅图超音速队（现俄克拉荷马城雷霆队）选中。2013-14赛季，杜兰特荣膺NBA常规赛MVP。2016年，杜兰特加盟金州勇士队，于2016-17赛季、2017-18赛季帮助勇士队夺得NBA总冠军，个人两度荣膺总决赛MVP（FMVP）。2019年，杜兰特加盟布鲁克林篮网队。 2021年，杜兰特入选NBA75大巨星。2023年，杜兰特被交易至菲尼克斯太阳队2010年土耳其世锦赛，凯文·杜兰特带领美国队夺得冠军并当选MVP  2012年伦敦奥运会、2016年里约奥运会以及2020年东京奥运会，杜兰特帮助美国队三夺男篮金牌。</p>
+	<video src="img/kd2.mp4" controls="controls" autoplay="autoplay" loop="loop"> </video>
+	
+	
+	</div>
+	
+	<script>
+	    let nav = document.querySelectorAll('.nav');
+	    for(let i=0; i<nav.length; i++) {
+	        nav[i].addEventListener('mouseover', function() {
+	            this.children[1].style.display = "block";
+	        });
+	        nav[i].addEventListener('mouseout', function() {
+	            this.children[1].style.display = "none";
+	        });
+	    }
+	</script>
+	<div>
+		
+	</div>	
+	</body>
+</html>

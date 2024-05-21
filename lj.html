@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> LeBron James</title>
+	<style>
+	    * {
+	        margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+	    }
+	    body {
+	        background-color: #000000;
+	    }
+	    a {
+	        cursor: default;
+	        text-decoration: none;
+	        font-size: 20px;
+	        font-weight: 700;
+	        color: #fff;
+	        letter-spacing: 3px;
+	    }
+	    li {
+			color: #000;
+	        list-style: none;
+	        cursor: default;
+	    }
+	    .container {
+	        position: absolute;
+	        top: 5%;
+	        left:50%;
+	        transform: translate(-50%, -50%);
+	        box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+	        font-size: 0;
+	    }
+	    .container .nav {
+	        display: inline-block;
+	        position: relative;
+	        width: 150px;
+	        height: 50px;
+	        background-color: ;
+	        text-align: center;
+	        line-height: 50px;
+	    }
+	    .container .nav:hover {
+	        background-color: #3e3e3e;
+	    }
+	    .container .nav ul {
+	        display: none;
+	        position: absolute;
+	        top: 50px;
+	        width: 100%;
+	        box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+	        background-color: #fff;
+	        text-align: center;
+	    }
+	    .container .nav ul li a {
+	        display: block;
+	        color: #505050;
+	    }
+	    .container .nav ul li a:hover {
+	        background-color: #e1e1e1;
+	    }
+		
+	</style>
+	</head>
+	<body>
+	<ul class="container">
+			<li class="nav">
+				<a href="http://127.0.0.1:8848/NationalBasketballAssociation/html.html">首页</a>
+			</li>
+			<li class="nav">
+				<a href="#">球星目录</a>
+				<ul>
+					<li><a herf="#">Jordan</a></li>
+					<li><a herf="#">Irving</a></li>
+					<li><a herf="#">Durant</a></li>
+					<li><a herf="#">Curry</a></li>
+					<li><a herf="#">James</a></li>
+				</ul>
+			</li>
+			<li class="nav">
+				<a href="#">比赛日程</a>      
+			</li>
+			<li class="nav">
+				<a href="#">了解更多球星</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+	    let nav = document.querySelectorAll('.nav');
+	    for(let i=0; i<nav.length; i++) {
+	        nav[i].addEventListener('mouseover', function() {
+	            this.children[1].style.display = "block";
+	        });
+	        nav[i].addEventListener('mouseout', function() {
+	            this.children[1].style.display = "none";
+	        });
+	    }
+	</script>
+	</body>
+</html>

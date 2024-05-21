@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kyrie Irving </title>
+	<style>
+	    * {
+	        margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+	    }
+	    body {
+	        background-color: #000000;
+	    }
+	    a {
+	        cursor: default;
+	        text-decoration: none;
+	        font-size: 20px;
+	        font-weight: 700;
+	        color: #fff;
+	        letter-spacing: 3px;
+	    }
+	    li {
+			color: #000;
+	        list-style: none;
+	        cursor: default;
+	    }
+	    .container {
+	        position: absolute;
+	        top: 5%;
+	        left:50%;
+	        transform: translate(-50%, -50%);
+	        box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+	        font-size: 0;
+	    }
+	    .container .nav {
+	        display: inline-block;
+	        position: relative;
+	        width: 150px;
+	        height: 50px;
+	        background-color: ;
+	        text-align: center;
+	        line-height: 50px;
+	    }
+	    .container .nav:hover {
+	        background-color: #3e3e3e;
+	    }
+	    .container .nav ul {
+	        display: none;
+	        position: absolute;
+	        top: 50px;
+	        width: 100%;
+	        box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+	        background-color: #fff;
+	        text-align: center;
+	    }
+	    .container .nav ul li a {
+	        display: block;
+	        color: #505050;
+	    }
+	    .container .nav ul li a:hover {
+	        background-color: #e1e1e1;
+	    }
+		.kl{
+			margin-top: 200px;
+			width: 200px;
+			padding-left:200px;
+			height: 700px;
+			text-align: center;
+			height: 500px;
+		}
+	</style>
+	</head>
+	<body>
+	kl
+	<ul class="container">
+			<li class="nav">
+				<a href="http://127.0.0.1:8848/NationalBasketballAssociation/html.html">首页</a>
+			</li>
+			<li class="nav">
+				<a href="#">球星目录</a>
+				<ul>
+					<li><a herf="#">Jordan</a></li>
+					<li><a herf="#">Irving</a></li>
+					<li><a herf="#">Durant</a></li>
+					<li><a herf="#">Curry</a></li>
+					<li><a herf="#">James</a></li>
+				</ul>
+			</li>
+			<li class="nav">
+				<a href="#">比赛日程</a>      
+			</li>
+			<li class="nav">
+				<a href="#">了解更多球星</a>
+			</li>
+		</ul>
+	</div>
+	<div class="kl" style="width: 800px; height: 900px;">
+	<p style="color: white; width: auto; position: center">
+	凯里·欧文（Kyrie Irving）全名凯里·安德鲁·欧文（Kyrie Andrew Irving），
+	1992年3月23日出生于澳大利亚墨尔本，美国职业篮球运动员，司职控球后卫，效力于NBA达拉斯独行侠队。 凯里·欧文于2011年以选秀状元身份进入NBA，先后效力于骑士队、凯尔特人队、篮网队以及独行侠队；新秀赛季获选最佳新秀以及全明星新秀挑战赛MVP；2013年夺得全明星三分大赛冠军；2014年首次入选全明星正赛先发阵容，并当选全明星赛最有价值球员；2014-15赛季入选最佳阵容第三阵容；2015-16赛季随骑士队夺得NBA总冠军；2017-18赛季荣获年度运球奖；2018-19赛季入选最佳阵容第二阵容；2020-21赛季入选最佳阵容第三阵容；8次入选NBA全明星阵容。 凯里·欧文于2014年随美国男篮出征男篮世界杯，随队夺得冠军并当选MVP。2016年里约奥运会，凯里·欧文随美国男篮夺得金牌。2019年福布斯100名人榜，凯里·欧文排名第74位
+	</p>
+	<video src="img/kl2.mp4" controls="controls" autoplay="autoplay" loop="loop" style="height: 550px; width: ;"> </video>
+	</div>
+	<script>
+	    let nav = document.querySelectorAll('.nav');
+	    for(let i=0; i<nav.length; i++) {
+	        nav[i].addEventListener('mouseover', function() {
+	            this.children[1].style.display = "block";
+	        });
+	        nav[i].addEventListener('mouseout', function() {
+	            this.children[1].style.display = "none";
+	        });
+	    }
+	</script>
+	</body>
+</html>
